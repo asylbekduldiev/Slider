@@ -12,7 +12,11 @@ class Slider extends Component {
     }
 
     componentDidMount() {
-        document
+        document.title = `Slide: ${this.state.slide}`
+    }
+
+    componentDidUpdate(){
+        document.title = `Slide: ${this.state.slide}`
     }
 
     changeSlide = (i) => {
